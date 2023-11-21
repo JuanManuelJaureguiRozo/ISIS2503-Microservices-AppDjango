@@ -147,6 +147,78 @@
 			]
 		},
 		{
+			"name": "Places",
+			"item": [
+				{
+					"name": "Create Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ML-405\",\r\n    \"data\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://34.171.66.152:8080/placecreate/",
+							"protocol": "http",
+							"host": [
+								"34",
+								"171",
+								"66",
+								"152"
+							],
+							"port": "8080",
+							"path": [
+								"placecreate",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Places",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ML-405\",\r\n    \"data\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://34.171.66.152:8080/places/",
+							"protocol": "http",
+							"host": [
+								"34",
+								"171",
+								"66",
+								"152"
+							],
+							"port": "8080",
+							"path": [
+								"places",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Measurements",
 			"item": [
 				{
@@ -156,7 +228,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"variable\": 1,\r\n    \"value\": 25,\r\n    \"unit\": \"C\",\r\n    \"place\": \"ML\"\r\n}",
+							"raw": "{\r\n    \"variable\": 1,\r\n    \"value\": 25,\r\n    \"unit\": \"C\",\r\n    \"place\": 1,\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -191,7 +263,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"variable\": 1,\r\n    \"value\": 24,\r\n    \"unit\": \"C\",\r\n    \"place\": \"ML\"\r\n}",
+							"raw": "{\r\n    \"variable\": 1,\r\n    \"value\": 24,\r\n    \"unit\": \"C\",\r\n    \"place\": 1,\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -223,7 +295,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"variable\": 1,\r\n        \"unit\": \"C\",\r\n        \"value\": 68.56,\r\n        \"place\": \"RGD-1\"\r\n    },\r\n    {\r\n        \"variable\": 1,\r\n        \"unit\": \"C\",\r\n        \"value\": 68.56,\r\n        \"place\": \"RGD-1\"\r\n    }\r\n]",
+							"raw": "[\r\n    {\r\n        \"variable\": 1,\r\n        \"unit\": \"C\",\r\n        \"value\": 68.56,\r\n         \"place\": 1,\r\n    },\r\n    {\r\n        \"variable\": 1,\r\n        \"unit\": \"C\",\r\n        \"value\": 68.56,\r\n        \"place\": 1,\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
